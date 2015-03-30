@@ -1,6 +1,6 @@
 ![SaltNPepper project](./gh-site/img/SaltNPepper_logo2010.png)
 # pepperModules-GATEModules
-This project provides an importer to support the [GATE](https://gate.ac.uk/) format for the linguistic converter framework Pepper (see https://u.hu-berlin.de/saltnpepper). A detailed description of the importer can be found in section [GATEImporter](#details).
+This project provides an importer to support the [GATE](https://gate.ac.uk/) format for the linguistic converter framework Pepper (see https://u.hu-berlin.de/saltnpepper). A detailed description of the importer can be found in section [GateApiImporter](#details).
 
 Pepper is a pluggable framework to convert a variety of linguistic formats (like [TigerXML](http://www.ims.uni-stuttgart.de/forschung/ressourcen/werkzeuge/TIGERSearch/doc/html/TigerXML.html), the [EXMARaLDA format](http://www.exmaralda.org/), [PAULA](http://www.sfb632.uni-potsdam.de/paula.html) etc.) into each other. Furthermore Pepper uses Salt (see https://github.com/korpling/salt), the graph-based meta model for linguistic data, which acts as an intermediate model to reduce the number of mappings to be implemented. That means converting data from a format _A_ to format _B_ consists of two steps. First the data is mapped from format _A_ to Salt and second from Salt to format _B_. This detour reduces the number of Pepper modules from _n<sup>2</sup>-n_ (in the case of a direct mapping) to _2n_ to handle a number of n formats.
 
@@ -39,13 +39,13 @@ pepper> update de.hu_berlin.german.korpling.saltnpepper::pepperModules-pepperMod
 ```
 
 ## Usage
-To use this module in your Pepper workflow, put the following lines into the workflow description file. Note the fixed order of xml elements in the workflow description file: &lt;importer/>, &lt;manipulator/>, &lt;exporter/>. The GATEImporter is an importer module, which can be addressed by one of the following alternatives.
+To use this module in your Pepper workflow, put the following lines into the workflow description file. Note the fixed order of xml elements in the workflow description file: &lt;importer/>, &lt;manipulator/>, &lt;exporter/>. The GateApiImporter is an importer module, which can be addressed by one of the following alternatives.
 A detailed description of the Pepper workflow can be found on the [Pepper project site](https://u.hu-berlin.de/saltnpepper). 
 
 ### a) Identify the module by name
 
 ```xml
-<importer name="GATEImporter" path="PATH_TO_CORPUS"/>
+<importer name="GateApiImporter" path="PATH_TO_CORPUS"/>
 ```
 
 ### b) Identify the module by formats
@@ -55,7 +55,7 @@ A detailed description of the Pepper workflow can be found on the [Pepper projec
 
 ### c) Use properties
 ```xml
-<importer name="GATEImporter" path="PATH_TO_CORPUS">
+<importer name="GateApiImporter" path="PATH_TO_CORPUS">
   <property key="PROPERTY_NAME">PROPERTY_VALUE</key>
 </importer>
 ```
@@ -83,4 +83,4 @@ This project has been funded by the [department of corpus linguistics and morpho
   limitations under the License.
 
 
-# <a name="details">GATEImporter</a>
+# <a name="details">GateApiImporter</a>
