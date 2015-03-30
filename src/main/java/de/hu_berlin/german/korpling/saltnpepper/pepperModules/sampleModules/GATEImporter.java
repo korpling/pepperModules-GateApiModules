@@ -34,11 +34,11 @@ import de.hu_berlin.german.korpling.saltnpepper.salt.saltCore.SElementId;
 //import de.hu_berlin.german.korpling.saltnpepper.pepper.modules.PepperModuleProperties;
 
 @Component(name = "GATEImporterComponent", factory = "PepperImporterComponentFactory")
-public class GateImporter extends PepperImporterImpl implements PepperImporter
+public class GATEImporter extends PepperImporterImpl implements PepperImporter
 {
-	public static final String MODULE_NAME="GateImporter";
+	public static final String MODULE_NAME="GateApiImporter";
 	public static final String GATE_HOME_PATH="GATE_HOME";
-	public GateImporter()
+	public GATEImporter()
 	{
 		super();
 		this.setName(MODULE_NAME);

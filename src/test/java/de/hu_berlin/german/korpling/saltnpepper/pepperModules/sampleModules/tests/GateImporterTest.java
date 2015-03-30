@@ -21,10 +21,10 @@ import org.junit.Before;
 
 import de.hu_berlin.german.korpling.saltnpepper.pepper.common.FormatDesc;
 import de.hu_berlin.german.korpling.saltnpepper.pepper.testFramework.PepperImporterTest;
-import de.hu_berlin.german.korpling.saltnpepper.pepperModules.sampleModules.GateImporter;
+import de.hu_berlin.german.korpling.saltnpepper.pepperModules.sampleModules.GATEImporter;
 
 /**
- * This is a dummy implementation of a JUnit test for testing the {@link GateImporter} class.
+ * This is a dummy implementation of a JUnit test for testing the {@link GATEImporter} class.
  * Feel free to adapt and enhance this test class for real tests to check the work of your importer.
  * If you are not confirm with JUnit, please have a look at <a href="http://www.vogella.com/tutorials/JUnit/article.html">
  * http://www.vogella.com/tutorials/JUnit/article.html</a>.
@@ -43,7 +43,7 @@ public class GateImporterTest extends PepperImporterTest{
 	 */
 	@Before
 	public void setUp(){
-		setFixture(new GateImporter());
+		setFixture(new GATEImporter());
 		
 		FormatDesc formatDef= new FormatDesc();
 		formatDef.setFormatName("GateDocument");

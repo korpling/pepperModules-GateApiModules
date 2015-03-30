@@ -46,7 +46,7 @@ import de.hu_berlin.german.korpling.saltnpepper.pepper.modules.impl.PepperMapper
 public class GateMapper extends PepperMapperImpl
 {
 	// this is a logger, for recording messages during program process, like debug messages
-	private static final Logger logger = LoggerFactory.getLogger(GateImporter.MODULE_NAME);
+	private static final Logger logger = LoggerFactory.getLogger(GATEImporter.MODULE_NAME);
 	
 	/** The GATE document to be mapped **/
 	private Document gateDocument= null;

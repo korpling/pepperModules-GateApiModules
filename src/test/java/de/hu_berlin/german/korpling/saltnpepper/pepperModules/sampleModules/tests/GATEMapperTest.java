@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
 import de.hu_berlin.german.korpling.saltnpepper.pepper.modules.exceptions.PepperModuleTestException;
 import de.hu_berlin.german.korpling.saltnpepper.pepper.testFramework.PepperModuleTest;
 import de.hu_berlin.german.korpling.saltnpepper.pepperModules.sampleModules.GATEImporterProperties;
-import de.hu_berlin.german.korpling.saltnpepper.pepperModules.sampleModules.GateImporter;
+import de.hu_berlin.german.korpling.saltnpepper.pepperModules.sampleModules.GATEImporter;
 import de.hu_berlin.german.korpling.saltnpepper.pepperModules.sampleModules.GateMapper;
 import de.hu_berlin.german.korpling.saltnpepper.salt.SaltFactory;
 import de.hu_berlin.german.korpling.saltnpepper.salt.saltCommon.SaltProject;
@@ -38,7 +38,7 @@ public class GATEMapperTest{
 		setFixture(new GateMapper());
 		getFixture().setProperties(new GATEImporterProperties());
 		getFixture().setSDocument(SaltFactory.eINSTANCE.createSDocument());
-		URI gateHome=  URI.createFileURI("./src/main/resources/").appendSegment(GateImporter.GATE_HOME_PATH);
+		URI gateHome=  URI.createFileURI("./src/main/resources/").appendSegment(GATEImporter.GATE_HOME_PATH);
 		System.setProperty("gate.home", gateHome.toFileString());
 		Gate.init();
 	}
