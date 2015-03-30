@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<saltCommon:SaltProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sCorpusStructure="sCorpusStructure" xmlns:saltCommon="saltCommon" xmlns:saltCore="saltCore">
+  <sCorpusGraphs>
+    <labels xsi:type="saltCore:SElementId" namespace="graph" name="id" value="T::corpusGraph1"/>
+    <nodes xsi:type="sCorpusStructure:SCorpus">
+      <labels xsi:type="saltCore:SFeature" namespace="salt" name="SNAME" value="T::gate"/>
+      <labels xsi:type="saltCore:SElementId" namespace="graph" name="id" value="T::salt:/gate"/>
+    </nodes>
+    <nodes xsi:type="sCorpusStructure:SDocument">
+      <labels xsi:type="saltCore:SFeature" namespace="salt" name="SNAME" value="T::myDOc"/>
+      <labels xsi:type="saltCore:SElementId" namespace="graph" name="id" value="T::salt:/gate/myDOc"/>
+      <labels xsi:type="saltCore:SFeature" namespace="salt" name="SDOCUMENT_GRAPH_LOCATION" value="T::file:/home/florian/work/SaltNPepper/workspace/pepperModules/pepperModules-GATEModules/src/test/resources/primData_odt/salt/gate/myDOc.salt"/>
+    </nodes>
+    <edges xsi:type="sCorpusStructure:SCorpusDocumentRelation" source="//@sCorpusGraphs.0/@nodes.0" target="//@sCorpusGraphs.0/@nodes.1">
+      <labels xsi:type="saltCore:SFeature" namespace="salt" name="SNAME" value="T::corpDocRel1"/>
+      <labels xsi:type="saltCore:SElementId" namespace="graph" name="id" value="T::salt:/corpDocRel1"/>
+    </edges>
+  </sCorpusGraphs>
+</saltCommon:SaltProject>
