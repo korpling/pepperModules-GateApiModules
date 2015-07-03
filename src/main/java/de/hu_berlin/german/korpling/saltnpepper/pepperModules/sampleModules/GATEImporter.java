@@ -42,6 +42,9 @@ public class GATEImporter extends PepperImporterImpl implements PepperImporter
 	{
 		super();
 		this.setName(MODULE_NAME);
+		setSupplierContact(URI.createURI("saltnpepper@lists.hu-berlin.de"));
+		setSupplierHomepage(URI.createURI("https://github.com/korpling/pepperModules-GATEModules"));
+		setDesc("This importer transforms data in the GATE format to a Salt model. ");
 		this.setProperties(new GATEImporterProperties());
 		this.addSupportedFormat("GateDocument", "2.0", null);
 		this.addSupportedFormat("GateDocument", "3.0", null);
